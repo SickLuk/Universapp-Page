@@ -1,0 +1,125 @@
+.container-topic{
+  @include boxContent;
+  // Troppo lungo per restare in 100vh, metto auto così non si creano casini
+  height: auto;
+  color: white;
+
+  .description-topic{
+  @include flexBeetween;
+
+    .description-topic-right{
+    img{
+      @include imgSize;
+    }
+  }
+
+    .description-topic-left{
+    h1{
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+    p{
+      margin-top: 10px;
+      width: 70%;
+    }
+  }
+}
+
+  .courses-topic{
+    margin-top: 80px;
+    @include flexBeetween;
+    flex-wrap: wrap;
+    
+    & > div{
+      width: 40%;
+      border-radius: 20px;
+      padding: 10px;
+      transition: all 0.2s ease-in;
+      margin-bottom: 20px;
+      
+      .courses{
+        @include flexBeetween;
+        padding: 10px;
+        
+        .courses-text{
+          h1{
+            margin-bottom: 20px;
+          }
+        }
+        .courses-image img{
+          width: 300px;
+          height: 300px;
+        }
+      }
+      
+      .teacher{
+        @include flexCenter;
+        img{
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          border: 2px white solid;
+          margin-right: 10px;
+        }
+      }
+
+      .courses-time{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+        text-transform: uppercase;
+      }
+
+    }
+
+    #courses-1{
+    border: 2px rgb(50%, 4%, 65%) solid;
+    &:hover{
+        background-color: rgb(163, 11, 214);
+      }
+    }
+
+    #courses-2{
+    border: 2px rgb(167, 11, 87) solid;     
+      &:hover{
+          background-color: rgb(224, 11, 114);
+        }
+    }
+
+    #courses-3{
+      border: 2px rgb(41, 116, 198) solid;    
+      &:hover{
+          background-color: rgb(23, 131, 247);
+        }
+    }
+    
+    #courses-4{
+      border: 2px rgb(87, 132, 31) solid;    
+      &:hover{
+          background-color: rgb(129, 216, 22);
+        }
+    }
+
+    #courses-5{
+      border: 2px rgb(209, 105, 8) solid;    
+      &:hover{
+          background-color: rgb(255, 127, 8);
+        }
+    }
+
+    #courses-6{
+      border: 2px rgb(212, 62, 98) solid;    
+      &:hover{
+          background-color: rgb(255, 72, 115);
+        }
+    }
+
+    #courses-7{
+      border: 2px rgb(196, 196, 196) solid;    
+      &:hover{
+          background-color: rgb(223, 221, 221);
+        }
+    }
+}
+}

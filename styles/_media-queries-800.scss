@@ -1,0 +1,88 @@
+@media only screen and (max-width:800px){
+  .container-topic{
+    .description-topic{
+      flex-direction: column;
+      .description-topic-left{
+        text-align: center;
+        margin-bottom: 50px;
+        p{
+          width: 100%;
+        }
+      }
+    }
+
+    .courses-topic{
+      flex-direction: column;
+      justify-content: center;
+
+      & > div{
+        width: 100%;
+      }
+      .courses-text{
+        word-wrap: break-word;
+        p{
+        display: none;
+        }
+      }
+    }
+  }
+
+
+
+    //////////////// SOLUZIONE PER TE ////////////////
+
+    .container-solutions{
+
+      .solution-title{
+        h1{
+          margin-bottom: 20px;
+        }
+      }
+      .container-price{
+      .left-price{
+        font-size: 12px;
+      }
+    }
+
+    .solution-price{
+      padding: 30px;
+      #title-price{
+        font-size: 12px;
+        padding: 20px;
+      }
+
+      .fa-solid{
+        font-size: 15px;
+      }
+    }
+    .prices{
+      #online-courses, #bootcamp, #universapp-courses{
+        font-size: 12px;
+        text-align: cent;
+      }
+    }
+  }
+
+
+    //////////////// TECHJOB ////////////////
+
+  .container-techjob{
+    .techjob-information{
+      justify-content: baseline;
+      flex-direction: column;
+      max-height: 100vh;
+      word-wrap: break-word;
+      overflow: scroll;
+      .left-techjob{
+        width: 100%;
+      }
+      .right-techjob{
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+
+
+  
+  }

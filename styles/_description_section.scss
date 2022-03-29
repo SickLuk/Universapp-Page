@@ -1,0 +1,20 @@
+.container-description {
+    @include flexBeetween;
+    @include boxContent;
+    color: white;
+    .description-left {
+        width: 35%;
+        #description-title {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        #description-story {
+            margin-top: 10px;
+        }
+    }
+    .description-right {
+        img {
+            @include imgSize;
+        }
+    }
+}

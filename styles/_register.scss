@@ -1,0 +1,123 @@
+.container-register{
+  @include boxContent;
+  color: white;
+  height: 30vh;
+  @include flexCenter;
+  flex-direction: column;
+
+  .block-register{
+    @include flexAround;
+
+    .left-register{
+      margin-right: 50px;
+      flex: 1;
+      p{
+        font-size: 20px;
+        padding: 20px;
+        span{
+          .fa-check{
+            color: $secondColor;
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+
+    .line-register{
+      height: 400px;
+      border: 1px white solid;
+    }
+
+    .right-register{
+      margin-left: 50px;
+      flex: 1;
+
+      h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: $secondColor;
+      }
+
+      h2{
+        margin-bottom: 20px;
+      }
+
+      form{
+          .register{
+          display:flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          input{
+          background-color: rgb(26, 26, 26);
+          border: 2px rgb(26, 26, 26) solid;
+          border-radius: 20px;
+          font-size: 15px;
+          color: rgb(125, 125, 125);
+          padding: 10px;
+          }
+
+          input[type=text]{
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .request-info{
+        margin-top: 10px;
+        #privacy{
+          font-size: 17px;
+        }
+
+        .info-button{
+          background: $firstColor;
+          color: white;
+          border: 2px #0011ff solid;
+          border-radius: 20px;
+          text-align: center;
+          font-size: 20px;
+          padding: 10px;
+          display: flex;
+          margin-top: 20px;
+          box-shadow: 0 5px 5px 0 rgba(255, 255, 255, 0.2), 0 6px 50px 0 rgba(255, 255, 255, 0.19);
+    
+          &:hover{
+            cursor:pointer;
+          }
+        }
+      }
+
+    }
+  }
+
+  .subscribe-courses{
+    margin-top: 30px;
+    width: 60%;
+
+    h2{
+      text-align: center;
+    }
+
+    .button-courses{
+      margin-top: 20px;
+      width: 100%;
+      font-size: 15px;
+      padding: 15px;
+      background: linear-gradient(to right, #ff0076, #ff00f5, #cc00ff, #5900ff);
+      border: none;
+      color: white;
+      box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+      border-radius: 15px;
+      background-size: 300% 100%;
+      transition: all .4s ease-in-out;
+
+      // Permette di fare l'hover del color (dal rosa al violetto)
+      &:hover {
+        background-position: 100% 0;
+        cursor: pointer;
+    }
+
+
+  }
+}
+}

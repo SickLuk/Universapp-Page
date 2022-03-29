@@ -1,0 +1,60 @@
+.container-students {
+    @include boxContent;
+    color: white;
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 50px;
+        color: $thirdColor;
+        background: white;
+    }
+    .students {
+        width: 50%;
+    }
+    .image-profile {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .container-students-left,
+    .container-students-right {
+        @include flexCenter;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        h2 {
+            padding: 10px;
+        }
+    }
+
+    // MIXIN BASE STUDENTS GRIGLIA
+    @mixin students {
+        border-radius: 10px;
+        padding: 10px;
+        height: 250px;
+        min-height: 150px;
+        margin-bottom: 5px;
+        width: 50%;
+        word-wrap: break-word;
+    }
+    
+    .students-1-left, .students-4-left, .students-2-right, .students-3-right {
+        // border: 3px solid $firstColor;
+        background: #c9c9c970;
+        @include students;
+    }
+    .students-2-left, .students-3-left, .students-1-right, .students-4-right {
+        // border: 3px solid $secondColor;
+        background: #3967ff75;
+        @include students;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

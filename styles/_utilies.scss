@@ -1,0 +1,43 @@
+// COLORI
+$firstColor: #4003ca;
+$secondColor: #33ffd9;
+$thirdColor: #F5006D;
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flexEvenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin flexBeetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin boxContent{
+    margin: 0 auto;
+    width: 90%;
+    min-height: 1000px;
+    height: 100vh;
+}
+
+@mixin imgSize{
+    width: 950px;
+    height: 550px;
+}
+
+#bold_color {
+    color: $thirdColor;
+}

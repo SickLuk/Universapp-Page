@@ -1,0 +1,26 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: black;
+}
+
+@import 'utilies';
+@import 'navbar'; 
+@import 'hero_section';
+@import 'description_section';
+@import 'needs';
+@import 'students';
+@import 'arguments';
+@import 'solutions';
+@import 'techjob';
+@import 'register';
+@import 'footer';
+@import 'media-queries-1180';
+@import 'media-queries-960';
+@import 'media-queries-800';
+@import 'media-queries-480';

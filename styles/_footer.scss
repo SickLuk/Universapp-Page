@@ -1,0 +1,60 @@
+footer{
+  margin-top: 20px;
+  @include flexBeetween;
+  min-height: 200px;
+  .left-footer{
+    @include flexCenter;
+    flex-direction: column;
+    min-height: 200px;
+    background: $secondColor;
+    color: $firstColor;
+    flex: 1;
+
+    .privacy{
+      display: flex;
+      flex-direction: row;
+      p{
+        padding: 10px;
+      }
+    }
+
+    .email{
+      margin-top: 20px;
+      text-align: center;
+      #email{
+        text-transform: uppercase;
+      }
+    }
+
+    .contacts{
+      h1{
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
+      img{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  
+  .right-footer{
+    min-height: 200px;
+    flex: 1;
+    background: $firstColor;
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+
+    p{
+      font-weight: bolder;
+      font-size: 20px;
+      color: $secondColor;
+    }
+
+    img{
+      margin-top: 30px;
+    }
+  }
+}

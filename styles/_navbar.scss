@@ -1,0 +1,19 @@
+.container-navbar{
+  padding: 20px;
+  color: white;
+  @include flexAround;
+
+  #access{
+    font-size: 1.1rem;
+    font-weight: bold;
+    // Metto la barretta sotto il sign_up/login
+    background: linear-gradient(90deg, $firstColor 50%, $secondColor 50%) bottom no-repeat;
+    background-size: 100% 2px;
+    padding: 5px;    
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

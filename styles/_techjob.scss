@@ -1,0 +1,44 @@
+.container-techjob{
+  @include boxContent;
+  color: white;
+  margin-top: 150px;
+  height: 20vh;
+  min-height: 800px;
+
+  .techjob-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .techjob-information{
+    @include flexAround;
+    margin-top: 30px;
+    border: 2px $secondColor solid;
+    border-radius: 20px;
+    padding: 50px;
+    font-size: 20px;
+
+    .left-techjob{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      width: 30%;
+      gap: 50px;
+      
+      .information{
+        margin-top: 10px;
+      }
+    }
+
+    .right-techjob{
+      width: 50%;    
+      h2{
+        color: $firstColor;
+      }
+
+      span{
+        font-weight: bolder;
+      }
+    }
+  }
+}

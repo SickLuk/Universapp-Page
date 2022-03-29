@@ -1,0 +1,127 @@
+@media only screen and (max-width:480px){
+
+  //////////////// NAVBAR ////////////////
+  .container-navbar{
+    img{
+      width: 70px;
+      height: 50px
+    }
+    #access{
+      font-size: 0.8rem;
+    }
+  }
+
+ //////////////// HERO SECTION ////////////////
+  .container-hero{
+    .left-hero{
+      .title{
+        font-size: 25px;
+      }
+
+      #candidati{
+        font-size: 20px;
+        padding: 5px;
+      }
+
+      .subtitle{
+        font-size: 15px;
+      }
+    }
+  }
+
+    .right-hero{
+      img{
+      }
+    }
+
+ //////////////// TUTTO A TUA DISPOSIZIONE ////////////////
+  
+ .container-needs{
+  .needs{
+    .needs-left{
+      #info-1, #info-2{
+        p{
+          font-size: 15px;
+        }
+      }
+    }
+
+    .needs-right{
+      #info-3, #info-4{
+        p{
+          font-size: 15px
+        }
+      }
+    }
+  }
+}
+
+  //////////////// IL PARERE DEGLI STUDENTI ////////////////
+
+.container-students{
+  .image-profile{
+    width: 60px;
+    height: 60px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  header{
+    h2{
+      font-size: 20px;
+    }
+  }
+
+  .students-1-left, .students-4-left, .students-2-right, .students-3-right,
+  .students-2-left, .students-3-left, .students-1-right, .students-4-right {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+   //////////////// ARGOMENTI DEL CORSO ////////////////
+
+   .container-topic{
+    margin-top: 250px;
+  }
+
+
+    //////////////// TECHJOB ////////////////
+  .container-techjob{
+   margin-bottom: 50vh;
+}
+
+
+    //////////////// REGISTER ////////////////
+
+    .container-register{
+      .block-register{
+        flex-direction: column;
+
+        .right-register{
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+      }
+      .line-register{
+        display: none;
+      }
+    }
+
+
+
+    //////////////// FOOTER ////////////////
+
+    footer{
+      position: relative;
+      margin-top: 150px;
+      .right-footer{
+        display: none;
+
+      }
+    }
+
+}
+
